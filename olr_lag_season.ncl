@@ -83,7 +83,7 @@ do mm=0,nyr-1
 
    ; load reconstructed olr 1+2
    ; read data array from file
-   fn = "~/ISV_Westwd_Prop/olr_reconstr_1-2_15d.nc"
+   fn = "olr_reconstr_1-2_15d.nc"
    fin1 = addfile(fn,"r") 
    timer = fin1->time
    timer@calendar = "standard"
@@ -92,7 +92,7 @@ do mm=0,nyr-1
    id_seasr = ind_season_day(timer,day0,dayf,mn0,mnf,common_yr0,common_yrf)
 
    ; read data array from file
-   fn = "~/ISV_Westwd_Prop/olr_reconstr_3-4_15d.nc"
+   fn = "olr_reconstr_3-4_15d.nc"
    fin2 = addfile(fn,"r")
    lon2 = fin2->lon({110:lone})
    nx2  = dimsizes(lon2)
