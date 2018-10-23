@@ -23,7 +23,7 @@
 ;_____________________________________________________
 ;_____________________________________________________
 ;
-load "~/nclscripts_ag/contrib/ind_season_day.ncl"
+load "ind_season_day.ncl"
 
 begin
 print_clock("Starting program")
